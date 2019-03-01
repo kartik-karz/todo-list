@@ -4,11 +4,11 @@ function Header() {
   return (
     <div>
       <h1>TodoList</h1>
-      <Link style={linkStyle} to="/">
+      <Link style={linkStyle} to="/projects/">
         Home
         <h3 style={{ marginLeft: "10" }}> </h3>
       </Link>
-      <Link style={linkStyle} to="/about">
+      <Link style={linkStyle} to="/projects/about">
         About
       </Link>
     </div>
