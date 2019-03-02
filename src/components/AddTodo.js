@@ -18,20 +18,26 @@ export class AddTodo extends Component {
   };
   render() {
     return (
-      <form style={{ display: "flex" }} onSubmit={this.onSubmit}>
+      <form
+        style={{ display: "flex" }}
+        className="form-inline"
+        onSubmit={this.onSubmit}
+      >
         <input
+          className="input-group "
           type="text"
           name="title"
           placeholder="Add Todo ..."
-          style={{ flex: "10", padding: "5px" }}
+          style={{ flex: "10", padding: "1px" }}
           value={this.state.title}
           onChange={this.onChange}
         />
         <input
+          className="input-group"
           type="submit"
           value="Submit"
           className="btn"
-          style={{ flex: 1 }}
+          style={{ flex: 1, marginLeft: "10px" }}
         />
       </form>
     );
